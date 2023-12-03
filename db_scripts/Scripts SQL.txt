@@ -1,0 +1,22 @@
+/******** CREACIÓN DE BASE DE DATOS ********/
+
+CREATE DATABASE IF NOT EXISTS bdusers
+
+/******** CREACIÓN DE TABLA USUARIOS ********/
+
+DROP TABLE IF EXISTS 'usuarios';
+CREATE TABLE IF NOT EXISTS 'usuarios' (
+    id BIGINT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(80) NOT NULL,
+    apellido VARCHAR(80 NOT NULL),
+    email VARCHAR(80),
+    password VARCHAR(80)
+);
+
+
+/********** INGRESO DE DATOS *********/
+
+INSERT INTO usuarios (id, nombre, apellido, email, password) VALUES (1, 'Juan', 'Hernández', 'juan@example.com', '12345');
+INSERT INTO usuarios (id, nombre, apellido, email, password) VALUES (2, 'Pedro', 'Osorio', 'pedro@example.com', 'admin123');
+INSERT INTO usuarios (id, nombre, apellido, email, password) VALUES (3, 'Paola', 'Martínez', 'pao@example.com', 'hola12345');
+INSERT INTO usuarios (id, nombre, apellido, email, password) VALUES (4, 'Erick', 'Galdámez', 'erickg@example.com', '123456');
